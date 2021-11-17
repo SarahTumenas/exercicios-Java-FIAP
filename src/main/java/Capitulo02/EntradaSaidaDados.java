@@ -1,12 +1,24 @@
 package Capitulo02;
 
-public class FluxoControle {
+import java.util.Scanner;
+
+public class EntradaSaidaDados {
+
     public static void main(String[] args) {
 
-        int age = 25;
+        int age = 0;
 
-        if (age < 0);
-        System.out.println("Idade inválida");
+        Scanner sc = new Scanner (System.in);
+
+        System.out.println("Digite seu nome:");
+        String name = sc.next();
+
+        System.out.println("Digite o nome completo: ");
+        String nomecompleto = sc.nextLine();
+
+
+        System.out.println("Digite sua idade: ");
+        age = sc.nextInt();
 
 
         if (age >= 18 && age < 70) {
@@ -26,4 +38,6 @@ public class FluxoControle {
             System.out.println("Menoridade");
         }
     }
-}
+
+    }
+
