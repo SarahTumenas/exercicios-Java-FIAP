@@ -1,17 +1,21 @@
 package SistemaBancario;
 
+import java.io.Serializable;
+
 /**
  * Classe que abstrai uma Conta Bancária
  * @author Sarah Tumenas
  * @version 1.0
  */
 
-public class Conta {
+public class Conta implements Serializable {
 
     //atributos que caracterizam a classe
-    int agencia;
-    int numero;
-    double saldo;
+
+    private static final long serialVersionUID = 1L;
+    private int agencia;
+    private int numero;
+    private double saldo;
 
 
     //construtor padrão, necessário para o consumo de APIs
@@ -30,6 +34,22 @@ public class Conta {
         this.numero = numero;
         this.saldo = saldo;
 
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     /**
@@ -57,7 +77,7 @@ public class Conta {
      * Verifica o saldo da Conta
      * @return Valor do Saldo da Conta
      */
-    public double verificarSaldo (){
+    public double getSaldo (){
 
         return this.saldo;
     }

@@ -10,13 +10,14 @@ public class TesteUnitario {
         // cc é a variável referência ao objeto Conta
 
         Conta cc = new Conta ();
-        cc.saldo = 253.00;
-        cc.agencia = 123;
-        cc.numero = 3214;
+        cc.depositar(253.00);
+        cc.setAgencia(123);
+        cc.setNumero(3214);
+
 
         cc.depositar(1000);
 
-        System.out.println(cc.verificarSaldo());
+        System.out.println(cc.getSaldo());
 
 
 
@@ -25,7 +26,7 @@ public class TesteUnitario {
         Conta poupanca = new Conta (111, 222, 3200);
 
         poupanca.retirar(250);
-        System.out.println(poupanca.verificarSaldo());
+        System.out.println(poupanca.getSaldo());
 
         /* quando a variável não está referenciada ao objeto, dará um erro de nulidade de exceção(NullPointerException),
         utilizamos o if para proteger o código para que este tipo de erro não ocorra
