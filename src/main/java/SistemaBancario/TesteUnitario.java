@@ -2,7 +2,7 @@ package SistemaBancario;
 
 public class TesteUnitario {
 
-    public static void main(String[] args) { /*método mais para poder executar a classe, não precisa de atributos,
+    public static void main(String[] args) { /*método main para poder executar a classe, não precisa de atributos,
      pois usará os da Classe */
 
 
