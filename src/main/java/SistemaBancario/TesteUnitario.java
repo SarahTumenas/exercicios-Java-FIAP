@@ -20,15 +20,15 @@ public class TesteUnitario {
 
 
 
-        //para criar a conta poupqança, foi utilizado o construtor de Classe da Classe Conta
+        //para criar a conta poupança, foi utilizado o construtor de Classe da Classe Conta
 
         Conta poupanca = new Conta (111, 222, 3200);
 
         poupanca.retirar(250);
         System.out.println(poupanca.verificarSaldo());
 
-        /* quando a variável não está referênciada ao objeto, dará um erro de nulidade de exceção(NullPointerException),
-         para evitar que isso occora, utilizamos o if para proteger o código para que este tipo de erro não ocorra
+        /* quando a variável não está referenciada ao objeto, dará um erro de nulidade de exceção(NullPointerException),
+        utilizamos o if para proteger o código para que este tipo de erro não ocorra
          */
 
         Conta cc2 = null;
