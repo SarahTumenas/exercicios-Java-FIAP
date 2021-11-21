@@ -40,6 +40,18 @@ public class TesteUnitario {
         }
 
 
+        ContaCorrente contaCorrente = new ContaCorrente();
+        contaCorrente.setAgencia(123);
+        contaCorrente.setNumero(4321);
+        contaCorrente.setTipo("PF");
+        contaCorrente.setChequeEspecial(2000);
+
+        contaCorrente.retirar(500);
+        System.out.println(contaCorrente.getSaldoDisponivel());
+
+
+
+
 
     }
 }
