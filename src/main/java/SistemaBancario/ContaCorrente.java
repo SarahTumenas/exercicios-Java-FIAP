@@ -28,5 +28,13 @@ public class ContaCorrente extends Conta{
     }
 
 
+    @Override
+    public void retirar (double valor){
+        valor += 10;
+        super.retirar(valor);
+
+    }
+
+
 
 }
