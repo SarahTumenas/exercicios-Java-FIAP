@@ -65,5 +65,32 @@ public class Caixa extends Produto {
         localizacaoProduto [2][2] = prod2;
 
         System.out.println(localizacaoProduto[2][1].getNome());
+
+
+        //Strings
+
+        String descricao = "Tipo Gala \nA maçã mais doce do mercado";
+        System.out.println(descricao);
+
+        descricao = "Tipo Gala \tA maçã mais doce do mercado";
+        System.out.println(descricao);
+
+        descricao = "Tipo Gala: \"A maçã mais doce do mercado\"";
+        System.out.println(descricao);
+
+
+        String nome = new String("Maçã");
+        String descricao1 = new String();
+        descricao1 = "Tipo Gala, a maçã mais doce do mercado";
+
+        String propaganda = nome + " " + descricao1;
+        System.out.println(propaganda);
+
+        propaganda = nome.concat(" ").concat(descricao1);
+        System.out.println(propaganda);
+
+        propaganda += "!";
+        System.out.println(propaganda);
+
     }
 }
